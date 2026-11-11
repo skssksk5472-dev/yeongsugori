@@ -1,0 +1,19 @@
+.area {
+  bottom: calc(var(--tab-height) + 16px + var(--safe-bottom));
+  z-index: 40;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.toast {
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  animation: show 200ms ease-out;
+}
+
+@keyframes show { from { opacity: 0; transform: translateY(8px); } }

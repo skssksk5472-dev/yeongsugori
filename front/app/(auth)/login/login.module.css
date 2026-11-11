@@ -1,0 +1,25 @@
+/* 위 300은 초록 배경, 흰 판이 268에서 시작해 초록 위로 살짝 올라온다 (시안 A1) */
+.page { position: relative; min-height: 100dvh; background: var(--card); }
+
+.hero { position: relative; height: 300px; background: var(--primary); }
+.brand { position: absolute; left: 28px; top: 72px; }
+.name { margin-top: 16px; font-size: 40px; font-weight: 800; color: #fff; }
+.english { margin-top: 2px; font-size: 13px; font-weight: 800; letter-spacing: 4px; color: var(--mint); }
+.tagline { margin-top: 14px; font-size: 15px; font-weight: 500; color: #fff; }
+.illustration { position: absolute; top: 70px; right: 28px; transform: rotate(7deg); }
+
+.panel {
+  position: relative;
+  margin-top: -32px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  background: var(--card);
+}
+.title { font-size: 22px; font-weight: 800; }
+.space { height: 4px; }
+
+.link { margin-top: 4px; display: flex; justify-content: center; gap: 8px; font-size: 14px; color: var(--ink-2); }
+.link a { font-weight: 800; color: var(--primary-dark); text-decoration: underline; }

@@ -1,0 +1,17 @@
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.text { flex: 1; }
+.action { font-weight: 800; text-decoration: underline; }
+.action button { font-weight: inherit; text-decoration: inherit; }
+
+.success { background: var(--primary-soft); color: var(--primary-dark); }
+.warn { background: var(--warn-bg); color: var(--warn-text); }
+.info { background: var(--primary-soft); color: var(--primary-dark); font-size: 14px; font-weight: 600; }
+.danger { background: var(--danger-bg); color: var(--danger); }

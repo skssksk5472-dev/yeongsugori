@@ -1,0 +1,74 @@
+/* 디자인 토큰(docs/06-design-system.md 2절)과 기본 스타일. 화면 CSS는 여기 변수만 쓴다. */
+
+:root {
+  --primary: #00835F;
+  --primary-dark: #005F45;
+  --primary-soft: #E3F5EE;
+  --mint: #3DDBA9;
+  --deep: #0F2E26;
+  --on-deep: #C9D8D2;
+  --ink: #12241F;
+  --ink-2: #44544E;
+  --ink-3: #5F6F69;
+  --line: #DCE5E0;
+  --bg: #F4F7F5;
+  --card: #FFFFFF;
+  --seg: #E8EEEB;
+  --danger: #D92D3A;
+  --danger-bg: #FDECEE;
+  --warn-text: #7A4F00;
+  --warn-bg: #FFF1D1;
+  --disabled-bg: #E4EAE7;
+  --icon-off: #B7C3BD;
+  --outside: #E9EEEC;
+  --overlay: rgba(18, 36, 31, .55);
+
+  --radius-card: 20px;
+  --radius-summary: 24px;
+  --radius-button: 16px;
+  --radius-input: 14px;
+  --radius-chip: 999px;
+  --radius-sheet: 28px;
+  --radius-dialog: 24px;
+
+  --shadow-fab: 0 6px 16px rgba(0, 131, 95, .35);
+  --shadow-dialog: 0 12px 40px rgba(18, 36, 31, .25);
+  --shadow-seg: 0 1px 3px rgba(18, 36, 31, .12);
+
+  --gutter: 20px;
+  --header-height: 56px;
+  --tab-height: 72px;
+  --app-width: min(100vw, 480px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { background: var(--outside); }
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; border: 0; background: none; }
+button:disabled { cursor: default; }
+a { color: inherit; text-decoration: none; }
+
+/* 폰 폭 컨테이너 — 넓은 화면에서는 가운데 정렬 */
+.app {
+  width: var(--app-width);
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: var(--bg);
+}
+
+/* 고정 요소(탭, 시트, 액션 바)를 폰 폭 컨테이너에 맞춰 가운데에 둔다 */
+.fixedInApp {
+  position: fixed;
+  left: 50%;
+  width: var(--app-width);
+  transform: translateX(-50%);
+}

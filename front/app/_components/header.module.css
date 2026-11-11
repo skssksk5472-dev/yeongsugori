@@ -1,0 +1,5 @@
+.header { height: var(--header-height); padding: 0 8px; display: flex; align-items: center; gap: 4px; }
+/* 탭 화면 제목은 뒤로 버튼 자리 없이 왼쪽 24에서 시작한다 (시안) */
+.tab { padding-left: 24px; }
+.title { flex: 1; font-size: 18px; font-weight: 700; color: var(--ink); }
+.big { font-size: 24px; font-weight: 800; }

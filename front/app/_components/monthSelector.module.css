@@ -1,0 +1,2 @@
+.selector { height: 48px; display: flex; align-items: center; justify-content: center; gap: 4px; }
+.month { min-width: 110px; text-align: center; font-size: 18px; font-weight: 800; }

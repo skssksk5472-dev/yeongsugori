@@ -1,0 +1,64 @@
+.banner { margin: 0 16px 10px; }
+
+/* 상단 카드: 상호·날짜 */
+.top { margin: 4px 16px 10px; padding: 16px; display: flex; align-items: center; gap: 14px; border-radius: var(--radius-card); background: var(--card); }
+.receiptIcon { width: 52px; height: 68px; flex-shrink: 0; border-radius: 10px; background: var(--primary-soft); display: flex; align-items: center; justify-content: center; }
+.topBody { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.topRow { min-height: 28px; display: flex; align-items: center; }
+.merchant { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 17px; font-weight: 800; color: var(--ink); text-align: left; }
+.merchantInput { width: 100%; height: 28px; border: 0; border-bottom: 2px solid var(--primary); outline: none; background: transparent; font-size: 17px; font-weight: 800; color: var(--ink); }
+.dateRow { position: relative; display: flex; align-items: center; justify-content: space-between; font-size: 14px; color: var(--ink-2); cursor: pointer; }
+.dateInput { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+
+/* 품목 목록 */
+.count { margin: 0 20px 8px; font-size: 14px; font-weight: 800; color: var(--ink-2); }
+.items { margin: 0 16px; border-radius: var(--radius-card); background: var(--card); overflow: hidden; }
+.item { padding: 7px 16px; display: flex; flex-direction: column; gap: 5px; border-bottom: 1px solid var(--line); cursor: pointer; }
+.item:last-child { border-bottom: 0; }
+.itemTop { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.itemName { min-width: 0; display: flex; align-items: baseline; gap: 6px; font-size: 15px; font-weight: 600; }
+.ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.quantity { padding: 1px 6px; border-radius: 6px; background: var(--seg); font-size: 12px; font-weight: 700; color: var(--ink-2); }
+.itemAmount { font-size: 16px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.discount { color: var(--primary); }
+.itemBottom { display: flex; justify-content: space-between; align-items: center; }
+
+.addButton {
+  width: calc(100% - 32px);
+  height: 44px;
+  margin: 10px 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1.5px dashed var(--primary);
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+/* 하단 바: 합계 + 저장 */
+.barSpace { height: 40px; }
+.sumRow { margin-bottom: 12px; display: flex; justify-content: space-between; align-items: baseline; }
+.sumBlock { display: flex; flex-direction: column; gap: 2px; }
+.sumRight { align-items: flex-end; }
+.sumLabel { font-size: 12px; font-weight: 600; color: var(--ink-3); }
+.sumPlainLabel { font-size: 14px; font-weight: 600; color: var(--ink-2); }
+.receiptTotal { font-size: 16px; font-weight: 700; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.sumValue { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.warn { font-weight: 700; color: var(--warn-text); }
+.sumValue.warn { font-weight: 800; }
+
+/* O4 품목 시트 */
+.sheetBody { display: flex; flex-direction: column; gap: 14px; }
+.sheetHeader { display: flex; justify-content: space-between; align-items: center; }
+.sheetTitle { font-size: 18px; font-weight: 800; }
+.sheetLabel { margin-bottom: -6px; font-size: 13px; font-weight: 700; color: var(--ink-2); }
+.sheetButtons { margin-top: 4px; display: flex; gap: 10px; }
+.deleteButton { flex: 1; }
+.confirmButton { flex: 2; }
+
+.choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.choice { height: 36px; padding: 0 12px; border: 1.5px solid var(--line); border-radius: var(--radius-chip); background: var(--card); font-size: 13px; font-weight: 700; color: var(--ink); }
+.choiceOn { border: 2px solid var(--primary); background: var(--primary-soft); }

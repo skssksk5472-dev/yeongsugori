@@ -1,0 +1,4 @@
+.segmented { display: flex; gap: 2px; padding: 4px; border-radius: 12px; background: var(--seg); }
+.item { flex: 1; height: 36px; border-radius: 9px; font-size: 14px; font-weight: 700; color: var(--ink-2); }
+.active { background: var(--card); color: var(--ink); box-shadow: var(--shadow-seg); }
+.item:disabled:not(.active) { color: var(--icon-off); }

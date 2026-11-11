@@ -1,0 +1,21 @@
+.bar {
+  bottom: 0;
+  z-index: 10;
+  height: calc(var(--tab-height) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  display: flex;
+  border-top: 1px solid var(--line);
+  background: var(--card);
+}
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+.active { color: var(--primary); }

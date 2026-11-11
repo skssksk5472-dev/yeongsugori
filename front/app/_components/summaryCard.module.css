@@ -1,0 +1,9 @@
+.card { margin: 0 16px 12px; padding: 20px 20px 18px; border-radius: var(--radius-summary); background: var(--deep); color: #fff; }
+.label { font-size: 13px; font-weight: 600; color: var(--on-deep); }
+.expense { display: flex; align-items: baseline; gap: 4px; margin: 4px 0 16px; }
+.expenseNumber { font-size: 34px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.unit { font-size: 18px; font-weight: 700; }
+.row { display: flex; gap: 24px; }
+.smallLabel { font-size: 12px; font-weight: 600; color: var(--on-deep); }
+.value { margin-top: 2px; font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.income { color: var(--mint); }

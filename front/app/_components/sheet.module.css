@@ -1,0 +1,18 @@
+.overlay { position: fixed; inset: 0; z-index: 20; background: var(--overlay); animation: fade 240ms ease-out; }
+
+.sheet {
+  bottom: 0;
+  z-index: 21;
+  max-height: 90dvh;
+  overflow-y: auto;
+  padding: 12px 20px calc(32px + var(--safe-bottom));
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  background: var(--card);
+  animation: up 240ms ease-out;
+}
+.handle { width: 40px; height: 4px; margin: 0 auto 16px; border-radius: 2px; background: var(--line); }
+.title { margin-bottom: 16px; font-size: 18px; font-weight: 800; }
+
+@keyframes fade { from { opacity: 0; } }
+/* fixedInApp 의 가운데 정렬(translateX)을 유지한 채 아래에서 올라온다 */
+@keyframes up { from { transform: translate(-50%, 100%); } to { transform: translate(-50%, 0); } }

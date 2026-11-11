@@ -1,0 +1,5 @@
+.page { min-height: 100dvh; background: var(--card); }
+.fields { padding: 8px 24px; display: flex; flex-direction: column; gap: 18px; }
+
+.link { margin-top: 14px; display: flex; justify-content: center; gap: 8px; font-size: 14px; color: var(--ink-2); }
+.link a { font-weight: 800; color: var(--primary-dark); text-decoration: underline; }

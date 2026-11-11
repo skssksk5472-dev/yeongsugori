@@ -1,0 +1,18 @@
+.row {
+  width: 100%;
+  min-height: 64px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+.row:active { background: var(--bg); }
+
+.text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.title { font-size: 15px; font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sub { display: flex; align-items: center; gap: 4px; font-size: 13px; color: var(--ink-3); }
+.ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.amount { font-size: 16px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.plus { color: var(--primary); }

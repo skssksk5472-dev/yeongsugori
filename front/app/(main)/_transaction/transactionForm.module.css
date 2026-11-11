@@ -1,0 +1,48 @@
+.body { padding: 4px 20px 0; }
+
+.amountLabel { display: block; margin-top: 16px; font-size: 13px; font-weight: 700; color: var(--ink-2); }
+.amountRow { margin: 4px 0 8px; padding-bottom: 6px; display: flex; align-items: baseline; gap: 6px; border-bottom: 2px solid var(--primary); }
+.amountInput {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.won { font-size: 22px; font-weight: 700; }
+
+.sectionLabel { margin: 16px 0 8px; font-size: 13px; font-weight: 700; color: var(--ink-2); }
+
+.list { margin-top: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); overflow: hidden; }
+.listRow {
+  position: relative;
+  height: 56px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  cursor: text;
+}
+.listRow:last-child { border-bottom: 0; }
+.listLabel { width: 48px; flex-shrink: 0; font-size: 14px; font-weight: 700; color: var(--ink-2); }
+.dateText { flex: 1; font-size: 16px; font-weight: 500; }
+/* 날짜 입력은 보이지 않게 행 전체를 덮는다. 누르면 기기의 날짜 선택이 열린다. */
+.dateInput { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+.plainInput {
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.plainInput::placeholder { color: var(--ink-3); font-weight: 400; }

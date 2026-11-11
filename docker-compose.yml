@@ -1,0 +1,45 @@
+name: zalssm
+
+# 시연용 실행: docker compose up --build → http://localhost:8080
+# 밖으로 여는 포트는 nginx(8080) 하나다.
+# DB는 MongoDB Atlas가 기본이다 (.env 의 MONGODB_URI). Atlas 없이 이 PC의 mongo를 쓰려면 아래 mongo 서비스 설명을 본다.
+
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - front
+      - back
+
+  front:
+    build: ./front
+
+  back:
+    build: ./back
+    env_file: .env
+    environment:
+      # .env의 MONGODB_URI(Atlas 주소)를 쓴다. 비어 있으면 아래 mongo 컨테이너를 쓴다
+      - MONGODB_URI=${MONGODB_URI:-mongodb://mongo:27017}
+      # .env의 UPLOAD_DIR가 비어 있으면 아래 uploads 볼륨 경로를 쓴다
+      - UPLOAD_DIR=${UPLOAD_DIR:-/data/uploads}
+    volumes:
+      - uploads:/data/uploads
+
+  # Atlas 대신 이 PC에서 돌리는 mongo. 기본으로는 켜지지 않는다 (profiles).
+  # 쓰려면 .env 의 MONGODB_URI 를 비우고: docker compose --profile local-db up --build
+  # 개발 서버·테스트용으로 이 PC(127.0.0.1)에만 연다. 휴대폰 등 밖에서는 접속할 수 없다.
+  mongo:
+    image: mongo:7
+    profiles: ["local-db"]
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  uploads:
+  mongo_data:

@@ -1,0 +1,4 @@
+.brand { height: var(--header-height); padding: 0 20px; display: flex; align-items: center; gap: 8px; }
+.brandName { font-size: 20px; font-weight: 800; color: var(--primary-dark); }
+.banner { margin: 0 16px 12px; }
+.filter { margin: 0 16px 12px; }

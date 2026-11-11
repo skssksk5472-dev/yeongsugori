@@ -1,0 +1,4 @@
+.card { margin: 0 16px 12px; border-radius: var(--radius-card); background: var(--card); overflow: hidden; }
+.header { display: flex; justify-content: space-between; padding: 14px 16px 4px; font-size: 13px; font-weight: 700; color: var(--ink-2); }
+.day { font-size: inherit; font-weight: inherit; }
+.net { color: var(--ink-3); font-variant-numeric: tabular-nums; }

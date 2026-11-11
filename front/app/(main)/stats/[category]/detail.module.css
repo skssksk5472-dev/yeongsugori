@@ -1,0 +1,8 @@
+.banner { margin: 0 16px 12px; }
+.card { margin: 4px 16px 12px; padding: 20px; border-radius: var(--radius-card); background: var(--card); }
+.month { font-size: 13px; font-weight: 600; color: var(--ink-3); }
+.amount { margin: 4px 0 10px; display: flex; align-items: baseline; gap: 4px; }
+.amountNumber { font-size: 32px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.unit { font-size: 18px; font-weight: 700; }
+.tags { display: flex; gap: 8px; }
+.tag { padding: 4px 8px; border-radius: 8px; background: var(--seg); font-size: 13px; font-weight: 700; color: var(--ink-2); }

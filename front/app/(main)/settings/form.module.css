@@ -1,0 +1,3 @@
+/* 비밀번호·닉네임 변경 화면 공통 (S2 패턴). 흰 배경, 칸 사이 18 */
+.page { min-height: 100dvh; background: var(--card); }
+.fields { padding: 8px 24px; display: flex; flex-direction: column; gap: 18px; }

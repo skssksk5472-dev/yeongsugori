@@ -1,0 +1,24 @@
+.banner { margin: 0 16px 12px; }
+.chart { padding: 12px 0 10px; }
+
+.donut { position: relative; width: 200px; height: 200px; margin: 0 auto; }
+.donutCenter { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.donutLabel { font-size: 13px; font-weight: 600; color: var(--ink-3); }
+.donutTotal { font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+.chipRow { margin-bottom: 12px; display: flex; justify-content: center; }
+.chip { padding: 7px 14px; display: flex; align-items: center; gap: 6px; border-radius: var(--radius-chip); font-size: 13px; font-weight: 700; }
+.up { background: var(--warn-bg); color: var(--warn-text); }
+.down { background: var(--primary-soft); color: var(--primary-dark); }
+
+.card { margin: 0 16px; padding: 6px 0; border-radius: var(--radius-card); background: var(--card); }
+.row { width: 100%; padding: 8px 16px; display: flex; align-items: center; gap: 12px; text-align: left; }
+.row:active { background: var(--bg); }
+.rowBody { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.rowTop { display: flex; justify-content: space-between; align-items: baseline; }
+.rowName, .rowAmount { font-size: 15px; font-weight: 700; color: var(--ink); }
+.rowAmount { font-variant-numeric: tabular-nums; }
+.rowBottom { display: flex; align-items: center; gap: 8px; }
+.track { flex: 1; height: 6px; border-radius: 3px; background: var(--seg); }
+.bar { display: block; height: 6px; border-radius: 3px; }
+.rowRatio { min-width: 78px; text-align: right; font-size: 12px; font-weight: 700; color: var(--ink-3); }
