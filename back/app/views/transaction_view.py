@@ -14,7 +14,7 @@ from views.master_view import Master_View, RequestHeader
 class Transaction_Service_View(Master_View):
      # 이 클래스의 객체를 만들 때 실행되는 초기 설정이다.
     # app: 요청받을 주소를 등록할 서버 앱.
-    # endpoint: 주소 앞부분. 예: "/api"
+    # endpoint: 주소 앞부분. 예: "/api"/
     # database: 데이터베이스 관련 객체.
     # head_parser: 응답 데이터를 구성하는 데 사용할 도구.
     # jwt_secret_key: 로그인 토큰 인증 처리에 사용할 비밀키.
